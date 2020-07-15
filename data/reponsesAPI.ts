@@ -1,4 +1,3 @@
-import { UniteLegaleEntrant } from './uniteLegaleEntrant';
 import { EtablissementEntrant } from './etablissementEntrant';
 
 export class Meta {
@@ -6,11 +5,6 @@ export class Meta {
     per_page : number;
     total_pages : number;
     page : number;
-}
-
-export class ReponseApiUnitesLegales {
-    unites_legales : Array<UniteLegaleEntrant>;
-    meta : Meta;
 }
 
 export class ReponseApiEtablissements {

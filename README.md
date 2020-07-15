@@ -1,5 +1,6 @@
 # projet4-Nodejs
-Ce micro-service extrait une partie des données gérées par l'API SIRENE via https://entreprise.data.gouv.fr/api/ et les stoque dans mongoDB.
+Ce micro-service extrait une partie des données gérées par l'API SIRENE via https://entreprise.data.gouv.fr/api/.
+Il calcule le nombre d'entreprise créée par jour, par département et par secteur d'activité et stock l'information dans MongoDB.
 
 # API SIRENE
 Le serveur accepte un maximum de 7 requêtes par seconde.

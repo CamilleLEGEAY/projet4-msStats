@@ -17,7 +17,12 @@ apiRouter.route('/msStats/findAll')
         })
     });
 
-apiRouter.route('/msStats/update')
+    //TODO
+apiRouter.route('/msStats/findDay')
     .get(async function (req, res){
-        res.send(fillMongoDB("2020-07-04"));
+        myMongoClient.genericFindList(process.env.COLLECTION, {}, function (err: any, liste: any) {
+            if (err)
+                res.send(err)
+            else res.send(liste);
+        })
     })
