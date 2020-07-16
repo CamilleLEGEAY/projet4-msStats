@@ -1,6 +1,6 @@
 import express  from 'express';
 import * as bodyParser from 'body-parser';
-import { update } from './dailyUpdate';
+import { update, fillMongoDB } from './dailyUpdate';
 import { apiRouter } from './api-routes';
 import { EtablissementSortant } from '../data/etablissementSortant';
 require('dotenv').config()
@@ -22,4 +22,5 @@ app.use(apiRouter);
 
 app.listen(process.env.PORT , function () {
   console.log("J'écoute");
+  //fillMongoDB("2020-07-15");
 });

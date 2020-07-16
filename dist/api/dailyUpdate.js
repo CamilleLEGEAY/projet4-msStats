@@ -39,7 +39,7 @@ async function fillMongoDB(dateCreation) {
 }
 exports.fillMongoDB = fillMongoDB;
 /**
- * prepare stats
+ * prepare stats/indicator
  */
 async function stat(dateCreation) {
     let map = new Map();
@@ -73,7 +73,7 @@ async function findAllPagesEtablissements(dateCreation) {
         page++;
         listeEtablissements = listeEtablissements.concat(reponse.etablissements);
     } while (reponse.meta.total_pages > reponse.meta.page);
-    console.log("nombre d'entreprise à créer : " + reponse.meta.total_results);
+    console.log("nombre d'entreprise créées : " + reponse.meta.total_results);
     return listeEtablissements;
 }
 /**

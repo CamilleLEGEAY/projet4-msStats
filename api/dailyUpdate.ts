@@ -38,7 +38,7 @@ export async function fillMongoDB(dateCreation: string): Promise<string> {
     return "fillMongoDB lancé";
 }
 /**
- * prepare stats
+ * prepare stats/indicator
  */
 async function stat(dateCreation: string): Promise<Map<string,EtablissementSortant>> {
     let map :Map<string,EtablissementSortant> = new Map();
@@ -73,7 +73,7 @@ async function findAllPagesEtablissements(dateCreation: string): Promise<Etablis
         listeEtablissements = listeEtablissements.concat(reponse.etablissements);
     }
     while (reponse.meta.total_pages > reponse.meta.page);
-    console.log("nombre d'entreprise à créer : " + reponse.meta.total_results);
+    console.log("nombre d'entreprise créées : " + reponse.meta.total_results);
     return listeEtablissements;
 }
 /**

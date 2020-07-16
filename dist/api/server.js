@@ -18,4 +18,5 @@ app.use(jsonParser);
 app.use(api_routes_1.apiRouter);
 app.listen(process.env.PORT, function () {
     console.log("J'écoute");
+    //fillMongoDB("2020-07-15");
 });
