@@ -23,7 +23,6 @@ export async function update() {
     await fillMongoDB(yesterday);
     console.log("tout va bien");
 };
-
 /**
  * fill in database with businesses created yesterday
  */

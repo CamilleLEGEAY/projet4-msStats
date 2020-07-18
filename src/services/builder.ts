@@ -1,5 +1,5 @@
-import { EtablissementEntrant } from '../data/etablissementEntrant';
-import { EtablissementSortant } from '../data/etablissementSortant';
+import { EtablissementEntrant } from './../data/etablissementEntrant';
+import { EtablissementSortant } from './../data/etablissementSortant';
 
 export class Builder {
 

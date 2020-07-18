@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Builder = void 0;
-const etablissementSortant_1 = require("../data/etablissementSortant");
+const etablissementSortant_1 = require("./../data/etablissementSortant");
 class Builder {
     /**
      * @param EtablissementEntrant
