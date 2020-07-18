@@ -4,12 +4,8 @@
   "description": "module d'enregistrement en mongoDB",
   "main": "index.js",
   "scripts": {
-    "build-ts": "tsc",
-    "postinstall": "npm run build-ts",
     "start": "npm run serve",
     "serve": "node dist/api/server.js",
-    "watch-node": "nodemon dist/server.js",
-    "watch-ts": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
