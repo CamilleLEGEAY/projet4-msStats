@@ -5,8 +5,16 @@ import { apiRouter } from './api-routes';
 require('dotenv').config()
 
 var app = express();
-const cors = require('cors'); //<-- required installing 'cors' (npm i cors --save)
-app.use(cors());
+//const cors = require('cors');
+//app.use(cors());
+
+// Add headers
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  next();
+});
 
 
 var jsonParser = bodyParser.json() ;
